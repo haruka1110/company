@@ -1,0 +1,48 @@
+body{
+  margin: 0;
+}
+
+header {
+  background-color: orange;
+  color: #fff;
+}
+
+/* h1のスタイル */
+h1 {
+  width: 100%;
+  margin: 0;
+  font-size: 70px;
+  text-align: center;
+  padding: auto;
+}
+
+/* リストのスタイル */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around; /* 要素を均等に配置 */
+  text-align: center;
+}
+
+/* リストアイテムのスタイル */
+li {
+  width: 100%;
+  flex: 1; /* 要素を均等に伸縮する */
+  background-color: #fff;
+  border: #808080 1px solid;
+}
+
+/* レスポンシブ対応のスタイル */
+@media (max-width: 600px) {
+  /* 画面幅が600px以下の場合のスタイル */
+  h1 {
+    font-size: 30px;
+  }
+
+  li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

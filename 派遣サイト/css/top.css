@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+}
+
+#header {
+    width: 100%;
+}
+
+.newstitle {
+    text-align: center;
+}
+
+.interview {
+    background-color: #ffd900;
+}
+
+.interviewtitle {
+    text-align: center;
+}
+
+.interviewtitle h1 {
+    margin: 0;
+    padding: 20px;
+}
+
+.slide img {
+    width: 200px;
+    height: 200px;
+}
+
+.wrap {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 340px;
+    margin-bottom: 100px;
+    margin: 0;
+}
+
+.slide {
+    display: flex;
+    -webkit-animation: slide 20s infinite linear 1s both;
+    animation: slide 20s infinite linear 1s both;
+}
+
+@-webkit-keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.item {
+    transition: all 0.2s;
+    margin-right: 20px;
+}
+
+.pickup {
+    background-color: #f0f0f0;
+}
+
+.pickuptitle {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.company {
+    width: 80%;
+    margin: 10px auto;
+    /* 左右の余白を自動的に均等に設定 */
+    position: relative; /* 子要素の絶対位置を設定するために必要 */
+}
+
+.company img {
+    display: block;
+    /* インライン要素からブロック要素に変更 */
+    margin: 0 auto;
+    /* 左右の余白を自動的に均等に設定 */
+    max-width: 100%;
+    /* 画像の最大幅を親要素に合わせる */
+}
+
+
+.companyname {
+    text-align: center;
+}
+
+.button-container {
+    text-align: center;
+    }
+
+.button-container button {
+    width: 60%;
+    margin: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+  background-color: #ffbb00;
+  border: 0;
+  }
+
+  .button-container button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .button-container2 {
+    text-align: center;
+}
+
+.button-container2 button {
+    width: 60%;
+    margin: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+  background-color: #00d9ff;
+  border: 0;
+  }
+
+  .button-container2 button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  }
